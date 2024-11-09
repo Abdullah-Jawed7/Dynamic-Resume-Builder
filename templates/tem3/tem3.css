@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header, .footer {
+      display: flex;
+      align-items: center;
+      padding: 16px 24px;
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .header .logo {
+      font-size: 1.6rem;
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+   
+    .hamBurger{
+      display: none;
+      padding: 5px;
+  }
+  #resHeader{
+    display: none;
+    transition: all ease 3000ms;
+  }
+  
+  .header .nav {
+      display: flex;
+      gap: 24px;
+      margin-left: auto;
+    }
+    .header .auth {
+     margin:0 10px ;
+    }
+    button a {
+      color: #fff !important;
+      text-decoration: none;
+    }
+    .header .auth a, .header .nav a {
+      color: #333;
+      font-size: 0.9rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .header .auth a:hover, .header .nav a:hover {
+      color: #009688;
+    }
+    .button-primary {
+      padding: 8px 16px;
+      background: #009688;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 0.9rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    
+    .button-primary:hover {
+      background: #00796b;
+    }
+    
+  footer {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    color: #4a5568;
+    font-size: 0.9em;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    color: #4a5568;
+    font-size: 0.9em;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .resume {
+      width: 750px;
+      margin: 0 auto;
+      margin-top: 20px;
+      padding: 20px;
+      background-color: #f4f4f4;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+ 
+
+
+  
+  .buttons{
+      width: 50%;
+      margin: 0 auto;
+      margin-top: 10px;
+      display: block;
+      background-color: transparent !important;
+      border: none !important;
+      border-radius: 0% !important;
+      box-shadow: none !important;
+  }
+  .btn-flex{
+      display: flex;
+      justify-content: space-around;
+  }
+  .btn{
+     
+      width: 40%;
+          padding: 12px 20px;
+          background: #009688;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          font-size: 1rem;
+          border-radius: 5px;
+          font-weight: 600;
+        }
+  
+  .emptyData{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  @media (max-width: 800px) {
+      .buttons ,.resume {
+          width: 90%;
+          padding: 5px;
+      }
+  
+      .header{
+          justify-content: space-between;
+      }
+      .hamBurger{
+          display: inline-block;
+          padding: 5px;
+      }
+  
+      .resHeaderActive{
+          display: flex !important;
+          flex-direction: column;
+          gap: 15px;
+      }
+      #resHeader{
+          padding: 20px;
+          background-color: #f8fafc;
+          transition: all ease 3000ms;
+          width: 100%;
+          position: absolute;
+          z-index: 5;
+        }
+      
+     
+      #resHeader .nav , #resHeader .auth{
+          display: flex;
+          flex-direction: column;
+          gap: 25px;
+      }
+      #resHeader .auth a, #resHeader .nav a {
+          color: #333;
+          font-size: 0.9rem;
+          text-decoration: none;
+          font-weight: 600;
+        }
+        
+        #resHeader .auth a:hover, #resHeader .nav a:hover {
+          color: #009688;
+        }
+  
+  
+      .header .auth , .header .nav{
+          display: none !important;
+      }
+      .footer-links {
+          gap: 10px;
+      }
+  }
+
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.buttons ,.resume {
+    margin: 0 auto;
+    width: 750px;
+    background-color: #ffffff;
+    padding:30px 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.resumeTop{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+   margin-bottom: 20px;
+   padding: 0 7%;
+}
+.columns{
+    padding: 25px;
+}
+
+.headImg ,.headImg img{
+    height: 130px;
+    width: 160px;
+    overflow: hidden;
+}
+.headImg img{
+    border-radius: 50%;
+}
+.resumeTop h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.resumeTop .subtitle {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.resumeTop .contact {
+    color: #333;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 4px solid #474545b1;
+    padding-bottom: 5px;
+}
+
+ .education{
+    margin-bottom: 15px;
+}
+
+ h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+/* ul {
+    list-style-type: disc;
+    margin-left: 20px;
+} */
+
+p {
+    color: #666;
+    line-height: 1.6;
+    overflow-wrap: break-word;
+    max-width: 100%;
+}
+
+
+
+
+.buttons{
+    display: block;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0% !important;
+    box-shadow: none !important;
+}
+.btn-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+   
+    width: 40%;
+        padding: 12px 20px;
+        background: #009688;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        border-radius: 5px;
+        font-weight: 600;
+      }
+      
+      .button-primary:hover {
+        background: #00796b;
+      }
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+.pdf-mode {
+    width: 800px; /* Or the width you use for desktop */
+    margin: 0 auto;
+}
+
+
+@media (max-width: 786px) {
+   
+    .buttons ,.resume {
+        width: 100%;
+        padding: 15px;
+    }
+    body{
+        padding: 10px;
+        
+    }
+    .left-column, .right-column {
+      
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 450px) {
+   
+    .resume {
+        padding: 5px;
+    }
+    body{
+        padding: 5px;
+        
+    }
+    .left-column, .right-column {
+        
+        padding: 2px ;
+    }
+    h1{
+        font-size: 1.5rem !important;
+    }
+    h2{
+        font-size:1.2rem !important;
+    }
+    h3{
+        font-size: 1rem !important;
+    }
+    .education p , p{
+        font-size: 1rem !important;
+
+    }
+    .btn{
+        font-size: 0.8rem;
+    }
+    .title{
+      font-size: 1rem !important;
+    }
+    .resumeTop{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.pdf-download .resumeTop {
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: normal;
+    justify-content: space-between;
+}
+
+.pdf-download .buttons ,.pdf-download .resume {
+    padding: 5px;
+}
+body{
+    padding: 5px;
+    
+}
+.pdf-download .left-column,.pdf-download .right-column {
+    
+    padding: 2px ;
+}
+.pdf-download h1{
+    font-size: 2rem !important;
+}
+.pdf-download h2{
+    font-size:1.5rem !important;
+}
+.pdf-download h3{
+    font-size: 1.2rem !important;
+}
+.pdf-download .education p , .pdf-download p{
+    font-size: 1.2rem !important;
+}

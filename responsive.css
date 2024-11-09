@@ -1,0 +1,92 @@
+@media  (max-width: 750px) {
+    .header{
+        justify-content: space-between;
+    }
+    .hamBurger{
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .resHeaderActive{
+        display: flex !important;
+        flex-direction: column;
+        gap: 15px;
+    }
+    #resHeader{
+        padding: 20px;
+        background-color: #f8fafc;
+        transition: all ease 3000ms;
+        width: 100%;
+        position: absolute;
+        z-index: 5;
+      }
+    
+   
+    #resHeader .nav , #resHeader .auth{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    #resHeader .auth a, #resHeader .nav a {
+        color: #333;
+        font-size: 0.9rem;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      
+      #resHeader .auth a:hover, #resHeader .nav a:hover {
+        color: #009688;
+      }
+
+
+    .header .auth , .header .nav{
+        display: none !important;
+    }
+
+    .hero-section {
+        padding: 30px 15px;
+    }
+    .hero-container{
+        flex-wrap: wrap;
+      
+       
+    }
+    .hero-image ,.hero-text{
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+        
+    }
+    .hero-text p{
+        text-align: center;
+        max-width: 100%;
+    }
+    .hero-text h1 ,.hero-text p{
+        margin-bottom: 20px;
+    }
+    .hero-image{
+        max-width: 60%;
+        margin: auto;
+    }
+    .features-flex{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 450px){
+    .hero-image{
+        max-width: 100%;
+        margin: auto;
+    }  
+    .features-section {
+        padding: 30px 14px;
+       
+      } 
+      .feature {
+     
+        padding: 20px 10px;
+    }
+    .footer-links {
+        gap: 10px;
+    }
+}

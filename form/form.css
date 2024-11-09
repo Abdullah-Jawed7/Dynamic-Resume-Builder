@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+
+.heading{
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f1f5f9;
+}
+.mirror-blue {
+  
+    padding: 13px 10px;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.5), 
+                0px 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size:small;
+    background-color:#f1f5f9;
+    border: none;
+    font-weight: 600;
+  }
+
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label  {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    display: block;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+#education-container ,#experience-container{
+  text-align: left;
+  padding: 10px 0;
+}
+
+.main-btn{
+  width: 100%;
+  margin: 0 auto;
+  font-size: large;
+  /* color:blue !important; */
+}
+@media (max-width: 750px) {
+    .container {
+        width: 100%;}
+        h1{
+            font-size: x-large;
+        }
+        .mirror-blue {
+            padding: 13px 4px;
+        }
+}

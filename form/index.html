@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div id="form-page" class="container ">
+        <h1 class="heading">Build Your Resume With ResumeForge</h1>
+        <div id="form-sec">
+        <form  id="resume-form" >
+            <label for="name">Name:</label>
+            <input class=" " type="text" id="name" name="name" required>
+            <label for="designation">Designation:</label>
+            <input class=" " type="text" id="designation" name="designation" required>
+
+            <label for="email">Email:</label>
+            <input class=" " type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input class=" " type="tel" id="phone" name="phone">
+
+            <label for="picture">Profile Picture:</label>
+            <input class=" " type="file" id="picture" name="picture" accept="image/*">
+            
+            <label for="Summary">Summary:</label>
+            <textarea name="summary" placeholder="Write about your self" rows="4" id="summary" required></textarea>
+
+
+            <div id="experience-container">
+                <label>Experience:</label>
+                <div class="experience-entry">
+                    <input class=" " type="text" name="experience-title" placeholder="Title" required>
+                    <textarea class=" " name="experience-details" rows="4" placeholder="Details" required></textarea>
+                </div>
+                <button class=" mirror-blue" type="button" onclick="addExperience()"> Add More Experience</button>
+                <button class=" mirror-blue" type="button" onclick="removeExp()">Remove Experience</button>
+            </div>
+
+            <div id="education-container">
+                <label>Education:</label>
+                <div class="education-entry">
+                    <input class=" " type="text" name="education-title" placeholder="Title" required>
+                    <textarea class=" " name="education-details" rows="4" placeholder="Details" required></textarea>
+                </div>
+
+                <button class="mirror-blue" type="button" onclick="addEducation()">Add More Education</button>
+                <button class="mirror-blue" type="button" onclick="removeEdu()">Remove Education</button>
+            </div>
+            <div id="project-container">
+                <label>Project:</label>
+                <div class="project-entry">
+                    <input class=" " type="text" name="project-title" placeholder="Title" required>
+                    <textarea class=" " name="project-details" rows="4" placeholder="Details" required></textarea>
+                </div>
+
+                <button class="mirror-blue" type="button" onclick="addProject()">Add More Project</button>
+                <button class="mirror-blue" type="button" onclick="removeProject()">Remove Project</button>
+            </div>
+
+            <label for="skills">Skills (comma-separated):</label>
+            <input class=" " type="text" id="skills" name="skills">
+
+            <!-- <button type="button" id="editBtn" onclick="editResume()">Edit Resume</button> -->
+           <a href="../select/select.html"><button id="sibmitBtn" class=" mirror-blue main-btn" type="button" onclick="submitForm()">Generate Resume</button></a>
+            <!-- <button type="button" onclick="downloadResume()">Download Resume</button> -->
+        </form>
+        </div>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
