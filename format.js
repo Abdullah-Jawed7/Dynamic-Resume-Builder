@@ -4,4 +4,3 @@ hamburger?.addEventListener("click", () => {
     resHeader?.classList.toggle("resHeaderActive");
     console.log(resHeader);
 });
-export {};

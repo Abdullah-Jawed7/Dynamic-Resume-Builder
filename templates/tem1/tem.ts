@@ -52,12 +52,12 @@ ${expContent}
     </ul>
 </div>
 `;
-
-if (localStorage.getItem('name')) {
+const defaultData = `<div><p class='emptyData'>Please First Fill the Form</p></div>`;
+if (localStorage.getItem('name') !== null) {
     document.getElementById('resume')!.innerHTML = resumeHTML;
     
 } else {
-    document.getElementById('resume')!.innerHTML = `<p class='emptyData'>Please First Fill the Form</p>`
+    document.getElementById('resume')!.innerHTML = defaultData
 }
 
 
@@ -68,7 +68,7 @@ function downloadResume(): void {
     // cvElement.classList.add("pdf-download");
     const options = {
         margin: 0, 
-        filename: 'resume.pdf',
+        filename: `resume_${localStorage.getItem('name')}.pdf`,
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 }, 
         jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
